@@ -1,0 +1,1 @@
+function nameOlar(){var o=document.querySelector("body");o&&console.log("não foi minificado!")}

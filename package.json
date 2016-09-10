@@ -1,0 +1,27 @@
+{
+  "name": "gulp-start-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guilhermepedroso/gulp-start-project.git"
+  },
+  "author": "Guilherme Pedroso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guilhermepedroso/gulp-start-project/issues"
+  },
+  "homepage": "https://github.com/guilhermepedroso/gulp-start-project",
+  "devDependencies": {
+    "browser-sync": "^2.15.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7"
+  }
+}
