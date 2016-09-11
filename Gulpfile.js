@@ -24,7 +24,7 @@ gulp.task('uglify:dev', function() {
 
 // Images
 gulp.task('images', () =>
-    gulp.src('src/images/*')
+    gulp.src('src/images/*.jpg')
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
 );
@@ -48,7 +48,7 @@ gulp.task('default', function() {
 
     gulp.start('clean', 'fonts', 'sass:dev', 'uglify:dev', 'images');
 
-    gulp.watch("src/scss/*.scss", ['sass:dev']);
+    gulp.watch("src/scss/**/*.scss", ['sass:dev']);
     gulp.watch("src/js/*.js", ['uglify:dev']);
     gulp.watch("src/images/*", ['images']);
     gulp.watch("*.html").on('change', browserSync.reload);
