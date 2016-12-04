@@ -2,7 +2,6 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     del = require('del'),
     uglify = require('gulp-uglify'),
-    uglify = require('gulp-uglify'),
 	imagemin = require('gulp-imagemin'),
     browserSync = require('browser-sync').create();
 
@@ -50,6 +49,6 @@ gulp.task('default', function() {
 
     gulp.watch("src/scss/**/*.scss", ['sass:dev']);
     gulp.watch("src/js/*.js", ['uglify:dev']);
-    gulp.watch("src/images/*", ['images']);
-    gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("src/images/**/*", ['images']);
+    gulp.watch("**/*.html").on('change', browserSync.reload);
 });
